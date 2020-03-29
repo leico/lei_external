@@ -4,7 +4,7 @@
 ///	@license	Use of this source code is governed by the MIT License found in the License.md file.
 
 #include<string>
-#include<sstream>
+#include<algorithm>
 
 #include "c74_min.h"
 #include "MidiFile.h"
@@ -29,40 +29,48 @@ public:
     timer<> metro{ this,
       MIN_FUNCTION{
 
+        std :: vector< smf :: MidiEvent > same_time_events;
 
         while(1){
 
-          // 初回の MidiEvent の開始が 0 ではない時はその分 delay する
-          if( _eventcount == 0 && _current_tick < (*_midifile.get())[0][_eventcount].tick ){
-            metro.delay( (*_midifile.get())[0][_eventcount].seconds * 1000. );
-            break;
-          }
+          smf :: MidiEvent* currentevent = nullptr;
+          if( ! goNext( &currentevent) ) break;
 
+          same_time_events.push_back( *currentevent );
 
-          // MidiEvent のデータを出力する
-          for( std :: size_t i = 0, end = (*_midifile.get())[0][_eventcount].size() ; i < end ; ++ i )
-            message_out.send( static_cast<int>( (*_midifile.get())[0][_eventcount][i] ) );
+          smf :: MidiEvent* nextevent = nullptr;
+          if( ! getEvent( &nextevent) ) break;
+          
+          if( nextevent -> tick == currentevent -> tick ) continue;
 
-          // 現時間の保存
-          _current_tick = (*_midifile.get())[0][_eventcount].tick;
-
-          // イベントの最後まで行ったら終了
-          if( _eventcount + 1 >= (*_midifile.get())[0].size() ) break;
-
-          // 次のイベントに以降
-          ++ _eventcount;
-
-          // 同タイミングだったらもう一度 MidiEvent の出力へ
-          if( (*_midifile.get())[0][_eventcount].tick == _current_tick ) continue;
-
-          // 異なる場合は 差分だけ delay して次の MidiEvent へ 
           metro.delay(
-            ( (*_midifile.get())[0][_eventcount].seconds - (*_midifile.get())[0][_eventcount - 1].seconds ) * 1000.
+            ( nextevent -> seconds - currentevent -> seconds ) * 1000.
           );
-          // 次の時間を保存
-          _current_tick = (*_midifile.get())[0][_eventcount].tick;
           break;
         }
+
+        if( same_time_events.empty() ) return {};
+
+
+
+        std :: sort(
+            same_time_events.begin()
+          , same_time_events.end()
+          , [](const smf :: MidiEvent& left, const smf :: MidiEvent& right){
+
+            const int end = left.size() > right.size() ? right.size() : left.size();
+            for( int i = 0 ; i < end ; ++ i )
+              if( left[i] != right[i] ) 
+                return left[i] < right[i];
+
+            return true;
+          }
+        );
+
+        for(const smf :: MidiEvent& e : same_time_events )
+          OutputEvent(e);
+
+
 
         return {};
 
@@ -73,10 +81,10 @@ public:
     
 
     lei_seq_alt( const atoms& args = {} ) : 
-        _midifile  ( std :: make_unique< smf :: MidiFile  >() )
-      , _eventcount(0)
-      , _is_readfile(0)
-      , _current_tick(0)
+        _midifile       ( std :: make_unique< smf :: MidiFile  >() )
+      , _eventcount     (0)
+      , _is_readfile    (0)
+      , _seekbar_seconds(0)
     {}
 
 
@@ -85,27 +93,106 @@ public:
 
 
 
-    message<> msg_bang{this, "bang", MIN_FUNCTION{
+    message<> msg_bang{this, "bang",
+      MIN_FUNCTION{
 
 
-      if( ! _midifile ) return {};
+        if( inlet != 0 ) return {};
 
-      if( _is_readfile == 0 ) { 
-        cerr << "doesn't read midi file" << endl;
+        smf :: MidiEvent *nextevent = nullptr;
+        if( ! goNext(&nextevent) ) return {};
+
+        OutputEvent(*nextevent);
+
         return {};
-      }
+      }, ""
+    };
 
-      if(_midifile.get() -> getTrackCount() == 0) return {};
 
-      if( _eventcount >= (*_midifile.get())[0].size() ) { 
-        cerr << "end of file" << endl;
+
+
+
+    message<> start_midifile{ this, "start", 
+      MIN_FUNCTION{
+
+        if( inlet != 0 ) return {};
+
+        smf :: MidiEvent* nextevent = nullptr;
+        if( ! getEvent( &nextevent )) return {};
+
+        metro.delay(nextevent -> seconds - _seekbar_seconds);
+
         return {};
-      }
+      }, ""
+    };
 
-      metro.delay(0);
 
-      return {};
-    }};
+    message<> stop_midifile{ this, "stop", 
+      MIN_FUNCTION{
+
+        metro.stop();
+
+        return {};
+      }, ""
+    };
+
+
+
+    message<> seek{ this, "seek", 
+      MIN_FUNCTION{
+
+        if( args.size() == 0 ) return {};
+        if( inlet       != 0 ) return {};
+
+
+        atom arg = args[0];
+
+        if( arg.type() != message_type :: float_argument && 
+            arg.type() != message_type :: int_argument ) 
+        {
+          cerr << "argument type does not number argument" << endl;
+          return {};
+        }
+
+        const double sec = static_cast<double>(arg) / 1000.;
+
+        if( sec < 0 ) { 
+          cerr << "argument < 0 " << endl;
+          return {};
+        }
+
+
+        metro.stop();
+
+        double currentseconds    = _seekbar_seconds;
+        int    currenteventcount = _eventcount;
+
+        _eventcount = 0;
+
+        smf :: MidiEvent* event = nullptr;
+
+        while( getEvent(&event) ){
+          if( sec > event -> seconds ){
+            goNext(&event);
+            continue;
+          }
+
+          // sec <= eventlist[e].seconds --------
+          // eventlist.size() >= 2, seekbar より先に event があることが保証される
+          _seekbar_seconds = sec;
+          return {};
+        }
+
+        // end of file
+
+        _seekbar_seconds = currentseconds;
+        _eventcount      = currenteventcount;
+
+
+        return {};
+        
+      }, ""
+    };
 
 
 
@@ -117,7 +204,20 @@ public:
         if( args.size() == 0 ) return {};
         if( inlet       != 0 ) return {};
 
-        std :: string file_path = path(static_cast< std :: string>(args[0]));
+        atom filename = args[0];
+
+        if( filename.type() != message_type :: symbol_argument ) {
+          cerr << "argument type does not symbol argument" << endl;
+          return {};
+        }
+
+
+        metro.stop();
+
+
+        _is_readfile = 0;
+
+        std :: string file_path = path(static_cast< std :: string>( filename ));
         cout << file_path << endl;
 
         _is_readfile = _midifile.get() -> read( file_path );
@@ -136,8 +236,15 @@ public:
         _midifile.get() -> joinTracks();
 
 
+        _eventcount      = 0;
+        _seekbar_seconds = 0;
+
+
+        read_done_out.send("bang");
+
+
         return {};
-      }
+      }, ""
     };
     // post to max window == but only when the class is loaded the first time
 
@@ -149,12 +256,78 @@ public:
 
 private :
 
+
+
+    void OutputEvent(const smf :: MidiEvent& event){
+      
+      for( int i = 0, end = event.size() ; i < end ; ++ i )
+        message_out.send( static_cast<int>( event[i] ) );
+
+      return;
+    }
+
+
+    const bool getEvent(smf :: MidiEvent** event){
+
+      smf :: MidiEventList* eventlist = nullptr;
+      if( ! getEventList(&eventlist) ) return false;
+
+      if( _eventcount >= eventlist -> size() ){
+        cout << "end of file" << endl;
+        return false;
+      }
+
+      *event = &(*_midifile.get())[0][_eventcount];
+      return true;
+    }
+
+
+    const bool goNext(smf :: MidiEvent** event){
+      if( ! getEvent( event ) ) return false;
+      _seekbar_seconds = (*event) -> seconds;
+      ++ _eventcount; 
+      return true; 
+    }
+
+
+
+
+    const bool is_MidiFileReady(void){
+
+      if( ! _midifile ) return false;
+
+      if( _is_readfile == 0 ) { 
+        cerr << "not yet read midi file" << endl;
+        return false;
+      }
+
+      if(_midifile.get() -> getTrackCount() <= 0){
+        cerr << "midi file looks empty." << endl;
+        return false;
+      }
+
+      return  true;
+    }
+
+
+    const bool getEventList(smf :: MidiEventList** eventlist){
+
+      if( ! is_MidiFileReady() ) return false;
+
+      *eventlist = &(*_midifile.get())[0];
+      return true;
+    }
+
+
+
+
+
     std :: unique_ptr< smf :: MidiFile > _midifile;
 
     std :: size_t _eventcount;
     std :: size_t _is_readfile;
     
-    int _current_tick;
+    double _seekbar_seconds;
 
 };
 

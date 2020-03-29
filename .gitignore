@@ -1,3 +1,5 @@
+!build/
+
 __*
 sysbuild
 *.sdf
@@ -8,14 +10,11 @@ log.txt
 externals
 extensions
 support
+tests
 *.o
 *.dylib
 tmp
 .DS_Store
-tests
+
 package-info.json
 
-
-
-!build/
-!tests/libmock_kernel.dylib

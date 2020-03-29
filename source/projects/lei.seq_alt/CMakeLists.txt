@@ -16,6 +16,15 @@ include_directories(
 	"${C74_INCLUDES}"
 )
 
+include_directories(
+  ${CMAKE_SOURCE_DIR}/lib/midifile/include
+)
+
+link_directories(
+  ${CMAKE_SOURCE_DIR}/lib/midifile/lib/
+)
+
+
 
 set( SOURCE_FILES
 	${PROJECT_NAME}.cpp
@@ -27,6 +36,10 @@ add_library(
 	MODULE
 	${SOURCE_FILES}
 )
+
+target_link_libraries(${PROJECT_NAME} INTERFACE midifile)
+
+
 
 
 include(${C74_MIN_API_DIR}/script/min-posttarget.cmake)

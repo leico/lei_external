@@ -6,4 +6,4 @@ all: \
 
 
 RUN_TESTS_buildpart_0: 
-	/Users/leico_studio/Documents/Max\ 8/Packages/min-devkit/script/cmake-mac/bin/ctest --force-new-ctest-process -C $(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+	/Applications/Homebrew/Cellar/cmake/3.16.4/bin/ctest --force-new-ctest-process -C $(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

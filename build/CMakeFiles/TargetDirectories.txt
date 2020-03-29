@@ -2,6 +2,7 @@
 /Users/leico_studio/Documents/Max 8/Packages/lei/build/CMakeFiles/ALL_BUILD.dir
 /Users/leico_studio/Documents/Max 8/Packages/lei/build/CMakeFiles/ZERO_CHECK.dir
 /Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/CMakeFiles/RUN_TESTS.dir
+/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/CMakeFiles/doc.dir
 /Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/CMakeFiles/API.dir
 /Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/CMakeFiles/ALL_BUILD.dir
 /Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/CMakeFiles/ZERO_CHECK.dir

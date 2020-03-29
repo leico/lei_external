@@ -16,15 +16,6 @@ include_directories(
 	"${C74_INCLUDES}"
 )
 
-include_directories(
-  ${CMAKE_SOURCE_DIR}/lib/midifile/include
-)
-
-#link_directories(
-#  ${CMAKE_SOURCE_DIR}/lib/midifile/lib
-#)
-
-
 
 set( SOURCE_FILES
 	${PROJECT_NAME}.cpp
@@ -37,10 +28,6 @@ add_library(
 	${SOURCE_FILES}
 )
 
-target_link_libraries( ${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/lib/midifile/lib/libmidifile.a )
-
-
-
 
 include(${C74_MIN_API_DIR}/script/min-posttarget.cmake)
 
@@ -50,8 +37,3 @@ include(${C74_MIN_API_DIR}/script/min-posttarget.cmake)
 #############################################################
 
 include(${C74_MIN_API_DIR}/test/min-object-unittest.cmake)
-
-
-target_link_libraries( ${TEST_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/lib/midifile/lib/libmidifile.a )
-
-

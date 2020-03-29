@@ -20,10 +20,10 @@ public:
     MIN_AUTHOR		{"leico"};
     MIN_RELATED		{"seq, follow, mtr, detonate"};
 
-    inlet<>  input	       { this, "(bang) post greeting to the max console" };
+    inlet<>  input	       { this, "(anything) messages to seq_alt" };
     outlet<> message_out	 { this, "(int) when bang received, outs midi raw message from read midi file", "int" };
-    outlet<> failed_out    { this, "(bang) when read file failed"};
-    outlet<> read_done_out { this, "(bang) when success read midi file"};
+    outlet<> failed_out    { this, "(bang) when read file failed", "bang"};
+    outlet<> read_done_out { this, "(bang) when success read midi file", "bang"};
 
 
     timer<> metro{ this,
@@ -145,16 +145,14 @@ public:
         if( inlet       != 0 ) return {};
 
 
-        atom arg = args[0];
-
-        if( arg.type() != message_type :: float_argument && 
-            arg.type() != message_type :: int_argument ) 
+        if( args[0].type() != message_type :: float_argument && 
+            args[0].type() != message_type :: int_argument ) 
         {
           cerr << "argument type does not number argument" << endl;
           return {};
         }
 
-        const double sec = static_cast<double>(arg) / 1000.;
+        const double sec = static_cast<double>(args[0]) / 1000.;
 
         if( sec < 0 ) { 
           cerr << "argument < 0 " << endl;
@@ -201,23 +199,25 @@ public:
     message<> read_midifile { this, "read", 
       MIN_FUNCTION{
 
+        cout << "args size:" << endl;
+        cout << args.size()  << endl;
+
+        cout << "inlet" << endl;
+        cout << inlet   << endl;
+
         if( args.size() == 0 ) return {};
         if( inlet       != 0 ) return {};
 
-        atom filename = args[0];
-
-        if( filename.type() != message_type :: symbol_argument ) {
+        if( args[0].type() != message_type :: symbol_argument ) {
           cerr << "argument type does not symbol argument" << endl;
           return {};
         }
 
-
         metro.stop();
-
 
         _is_readfile = 0;
 
-        std :: string file_path = path(static_cast< std :: string>( filename ));
+        std :: string file_path = path(static_cast< std :: string>( args[0] ));
         cout << file_path << endl;
 
         _is_readfile = _midifile.get() -> read( file_path );

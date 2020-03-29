@@ -7,95 +7,95 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		2254694FDF784494B1ABCA37 /* RUN_TESTS */ = {
+		3530DD410FAF4220BF05A90E /* RUN_TESTS */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = F7AB705448E1432BA3935269 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildConfigurationList = D462D8BD468E43AF9EA715BB /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
 			buildPhases = (
-				FBF55F5EC27C4717A4181FCA /* CMake PostBuild Rules */,
+				DFD030D5C94F4D8B8084A348 /* CMake PostBuild Rules */,
 			);
 			dependencies = (
 			);
 			name = RUN_TESTS;
 			productName = RUN_TESTS;
 		};
-		69CF0BF42EDF4830B5E0E634 /* ALL_BUILD */ = {
+		5D3B87A860D943A2B183E15F /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = D87A848C763B4177BE0340FF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 577F4AE44A4A4E7F81EE972B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				DAFA8288E87546BA99199ABE /* CMake Rules */,
-			);
-			dependencies = (
-				2DB1F0A8F5E942E49E2CAD59 /* PBXTargetDependency */,
-				AC6E24A6324F48DDBDE4F8A3 /* PBXTargetDependency */,
-				BDEEABDC4FD248DA80E1936D /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
-		8180B42E139949B1BB81E795 /* doc */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 3A48DC0151294D95A1D361C9 /* Build configuration list for PBXAggregateTarget "doc" */;
-			buildPhases = (
-				06AAEAB4C01C46E6BE7F297C /* CMake Rules */,
-			);
-			dependencies = (
-				8D1DB43AA3CF4DA7AFE60217 /* PBXTargetDependency */,
-			);
-			name = doc;
-			productName = doc;
-		};
-		B9D183AC616247F293ECA3E9 /* API */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = A3E914ACC5CC43A5AF732200 /* Build configuration list for PBXAggregateTarget "API" */;
-			buildPhases = (
-			);
-			dependencies = (
-				35413A1EDB97474CBAA21468 /* PBXTargetDependency */,
-			);
-			name = API;
-			productName = API;
-		};
-		CBE3233CE72442239B890A9E /* ZERO_CHECK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = EBDE844E8DA94580A0201D5C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
-			buildPhases = (
-				ABA1A2CF7C1B457493708A8E /* CMake Rules */,
+				FF0435FBC8314497B0A6911A /* CMake Rules */,
 			);
 			dependencies = (
 			);
 			name = ZERO_CHECK;
 			productName = ZERO_CHECK;
 		};
+		5E139A0ADB594F5EADB82F6A /* doc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BAC51D25F688472A8BA8B22A /* Build configuration list for PBXAggregateTarget "doc" */;
+			buildPhases = (
+				5EA2B993D5CD4B54940FF7CD /* CMake Rules */,
+			);
+			dependencies = (
+				A5D945C30C32496D9BA8C54D /* PBXTargetDependency */,
+			);
+			name = doc;
+			productName = doc;
+		};
+		8025B10BD2514FBE945DEBB6 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FEA79947262D4BDE8D9FE8D9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				84C8D1D1E51847D9B72DF5CC /* CMake Rules */,
+			);
+			dependencies = (
+				72B114F7B8D84A5DBABF04FB /* PBXTargetDependency */,
+				930F738AEDC948CC80F2468C /* PBXTargetDependency */,
+				F7A749537026427A83E8C7B5 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D01056A564BB4C6A87F0EC4A /* API */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E6CCC0D903FD4E3A85BC0421 /* Build configuration list for PBXAggregateTarget "API" */;
+			buildPhases = (
+			);
+			dependencies = (
+				6509BB2F4CE741AC8D411235 /* PBXTargetDependency */,
+			);
+			name = API;
+			productName = API;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		53F9F2D5572644D88E9A2AA9 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/c74_mock.cpp */ = {isa = PBXBuildFile; fileRef = 7FFCCF6978EB417FA2FF81F7 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/c74_mock.cpp */; };
-		E383907077914A84840B9703 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9D8BE1BC5F95403F9088F90B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/CMakeLists.txt */; };
+		B955FC346EF94E018B5085FD /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 087D1D490799465C99FC3356 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/CMakeLists.txt */; };
+		C4C6CE43F21544EEB1D62B29 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/c74_mock.cpp */ = {isa = PBXBuildFile; fileRef = DE372E57AAEF427F90D8E728 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/c74_mock.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		18572ED0BD41419FA3111F8D /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		1EA6306E300740C0B9E09DEA /* MinSizeRel */ = {
+		4E0510737A57493DA165D6F5 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		A8E39B1A2A6442369B568FD4 /* Debug */ = {
+		7E4F01A892264C209D156586 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Debug;
 		};
-		AE9959B681484676844A64E5 /* RelWithDebInfo */ = {
+		DEC85D4A1DD24604A0504257 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		EB28FA2F1BB84B448A870F2B /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -105,244 +105,240 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		334D19C874744F13A4BCDF31 /* PBXContainerItemProxy */ = {
+		5155C4A3A3BF4E65A117A2EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C413490D25F14C37AC9C5894 /* Project object */;
+			containerPortal = EEB131AC942F4001BCA065DC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CBE3233CE72442239B890A9E;
-			remoteInfo = ZERO_CHECK;
-		};
-		64906EFED6EA48B19773D035 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C413490D25F14C37AC9C5894 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F9225E26C70C4C2E8A3B4BA0;
+			remoteGlobalIDString = 2547C114CF1D4BFDAB7208F4;
 			remoteInfo = mock_kernel;
 		};
-		8323F5976BC44335B68EB1D9 /* PBXContainerItemProxy */ = {
+		55DCFEE24EAC4CCB970B84C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C413490D25F14C37AC9C5894 /* Project object */;
+			containerPortal = EEB131AC942F4001BCA065DC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CBE3233CE72442239B890A9E;
+			remoteGlobalIDString = 5D3B87A860D943A2B183E15F;
 			remoteInfo = ZERO_CHECK;
 		};
-		AC4BC45EB97B42088A8DFF44 /* PBXContainerItemProxy */ = {
+		C5744AFF7E04458F91F8D7E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C413490D25F14C37AC9C5894 /* Project object */;
+			containerPortal = EEB131AC942F4001BCA065DC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CBE3233CE72442239B890A9E;
+			remoteGlobalIDString = 5D3B87A860D943A2B183E15F;
 			remoteInfo = ZERO_CHECK;
 		};
-		E6C667394C294D6DBA48A80F /* PBXContainerItemProxy */ = {
+		D8DBFF2D179A4F449576FD50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C413490D25F14C37AC9C5894 /* Project object */;
+			containerPortal = EEB131AC942F4001BCA065DC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B9D183AC616247F293ECA3E9;
+			remoteGlobalIDString = 5D3B87A860D943A2B183E15F;
+			remoteInfo = ZERO_CHECK;
+		};
+		E9EA2B53E1AF47D0B276F137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEB131AC942F4001BCA065DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D01056A564BB4C6A87F0EC4A;
 			remoteInfo = API;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12F20793D12D4729906DADD5 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_sample.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_operator_sample.h; path = include/c74_min_operator_sample.h; sourceTree = SOURCE_ROOT; };
-		1568447A422B44078B85963A /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/benchmarks/systemtime.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = systemtime.h; path = include/readerwriterqueue/benchmarks/systemtime.h; sourceTree = SOURCE_ROOT; };
-		196750731D2545FC86A88A59 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_none.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_dataspace_none.h; path = include/c74_min_dataspace_none.h; sourceTree = SOURCE_ROOT; };
-		23BBE31E64F24A5DA0A6A117 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_mc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_operator_mc.h; path = include/c74_min_operator_mc.h; sourceTree = SOURCE_ROOT; };
-		2535ACF70BB64C0894E36527 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/readerwriterqueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = readerwriterqueue.h; path = include/readerwriterqueue/readerwriterqueue.h; sourceTree = SOURCE_ROOT; };
-		2B4B358B47CF4C4EADA2200B /* mock_kernel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libmock_kernel.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BAAB3100A4E4DCE842AE6B4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_buffer.h; path = include/c74_min_buffer.h; sourceTree = SOURCE_ROOT; };
-		2FFB4EF46405412FB3617A40 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_operator_vector.h; path = include/c74_min_operator_vector.h; sourceTree = SOURCE_ROOT; };
-		30B4A5585196477AA13F7665 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_matrix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_operator_matrix.h; path = include/c74_min_operator_matrix.h; sourceTree = SOURCE_ROOT; };
-		326303444EDD4D0CA58682F2 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/benchmarks/ext/1024cores/spscqueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = spscqueue.h; path = include/readerwriterqueue/benchmarks/ext/1024cores/spscqueue.h; sourceTree = SOURCE_ROOT; };
-		39EC3019E3D141B6B7B13F92 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_queue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_queue.h; path = include/c74_min_queue.h; sourceTree = SOURCE_ROOT; };
-		46E8162321E74B8EBE4B0BCB /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_message.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_message.h; path = include/c74_min_message.h; sourceTree = SOURCE_ROOT; };
-		492F5351DA684AD68CC965F4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_time.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_dataspace_time.h; path = include/c74_min_dataspace_time.h; sourceTree = SOURCE_ROOT; };
-		514A3A39DC194FBDA6CF49AA /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_api.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_api.h; path = include/c74_min_api.h; sourceTree = SOURCE_ROOT; };
-		59981D5D791646AEBA3DD6D4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_object.h; path = include/c74_min_object.h; sourceTree = SOURCE_ROOT; };
-		6045A62D3B9148B9BEF6C264 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_flags.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_flags.h; path = include/c74_min_flags.h; sourceTree = SOURCE_ROOT; };
-		61526AB5E8FB47F18CF92A84 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_dataspace.h; path = include/c74_min_dataspace.h; sourceTree = SOURCE_ROOT; };
-		6740A2EA59F64AADA3B12D70 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_limit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_limit.h; path = include/c74_min_limit.h; sourceTree = SOURCE_ROOT; };
-		6A70247B32A24487B10EF833 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_doc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_doc.h; path = include/c74_min_doc.h; sourceTree = SOURCE_ROOT; };
-		6B460FFBA25A4CC39879B248 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_graphics.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_graphics.h; path = include/c74_min_graphics.h; sourceTree = SOURCE_ROOT; };
-		6E1BC76B851B493581A75947 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object_components.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_object_components.h; path = include/c74_min_object_components.h; sourceTree = SOURCE_ROOT; };
-		73593EE511534CA9A88796CC /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_path.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_path.h; path = include/c74_min_path.h; sourceTree = SOURCE_ROOT; };
-		7A8D7BA22AAF4733A4EC470C /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_buffer_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_buffer_impl.h; path = include/c74_min_buffer_impl.h; sourceTree = SOURCE_ROOT; };
-		7BC72B777CFB4DCA83B9FD09 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_unittest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_unittest.h; path = include/c74_min_unittest.h; sourceTree = SOURCE_ROOT; };
-		7FFCCF6978EB417FA2FF81F7 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/c74_mock.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = c74_mock.cpp; path = test/mock/c74_mock.cpp; sourceTree = SOURCE_ROOT; };
-		81AD8B17EF8F4563A816E96B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_impl.h; path = include/c74_min_impl.h; sourceTree = SOURCE_ROOT; };
-		830D9F64D69C48AB8C8F303F /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_gain.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_dataspace_gain.h; path = include/c74_min_dataspace_gain.h; sourceTree = SOURCE_ROOT; };
-		84BB7BB3AC484E46B6BF3F91 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_symbol.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_symbol.h; path = include/c74_min_symbol.h; sourceTree = SOURCE_ROOT; };
-		878D64078F6A4139944336C7 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_attribute_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_attribute_impl.h; path = include/c74_min_attribute_impl.h; sourceTree = SOURCE_ROOT; };
-		88A4BDCFB1824CB6BF1CBA32 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_logger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_logger.h; path = include/c74_min_logger.h; sourceTree = SOURCE_ROOT; };
-		8F76F42F4B9547FEA46EE724 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_outlet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_outlet.h; path = include/c74_min_outlet.h; sourceTree = SOURCE_ROOT; };
-		948B9C4DCCC04E73B0AD16BB /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/murmur/Murmur3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Murmur3.h; path = include/murmur/Murmur3.h; sourceTree = SOURCE_ROOT; };
-		9D8BE1BC5F95403F9088F90B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/mock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		A05DD29E9BCE4CB6B047F090 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		A291C7CD4EE848298FF7B6D9 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		A4FB3816750C4E709080C169 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_ui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_operator_ui.h; path = include/c74_min_operator_ui.h; sourceTree = SOURCE_ROOT; };
-		ADA7AE00D73949A98F88350B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_timer.h; path = include/c74_min_timer.h; sourceTree = SOURCE_ROOT; };
-		B692D0508BC44778936C435C /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_inlet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_inlet.h; path = include/c74_min_inlet.h; sourceTree = SOURCE_ROOT; };
-		BBC5907E497049FFA4971E11 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_time.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_time.h; path = include/c74_min_time.h; sourceTree = SOURCE_ROOT; };
-		BDCE2EE482C743D182738C9B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_threadsafety.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_threadsafety.h; path = include/c74_min_threadsafety.h; sourceTree = SOURCE_ROOT; };
-		BE6D637EF3F749D591E0EB6A /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_catch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_catch.h; path = include/c74_min_catch.h; sourceTree = SOURCE_ROOT; };
-		BEAB0D75931A4EBD8A2D7800 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_texteditor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_texteditor.h; path = include/c74_min_texteditor.h; sourceTree = SOURCE_ROOT; };
-		D28AEE7C45E04EC6AB1B6FC8 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_port.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_port.h; path = include/c74_min_port.h; sourceTree = SOURCE_ROOT; };
-		D2E8535CCC69427BBE9106A5 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/benchmarks/ext/folly/ProducerConsumerQueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ProducerConsumerQueue.h; path = include/readerwriterqueue/benchmarks/ext/folly/ProducerConsumerQueue.h; sourceTree = SOURCE_ROOT; };
-		D5574C43C90148DBBAE79D63 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/atomicops.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = atomicops.h; path = include/readerwriterqueue/atomicops.h; sourceTree = SOURCE_ROOT; };
-		DC9D134881614E1FA4BE76EF /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min.h; path = include/c74_min.h; sourceTree = SOURCE_ROOT; };
-		DED02827DF8C4DAB88AE64E1 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_argument.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_argument.h; path = include/c74_min_argument.h; sourceTree = SOURCE_ROOT; };
-		E2BBFA1BF7F142B594A06F9D /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_atom.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_atom.h; path = include/c74_min_atom.h; sourceTree = SOURCE_ROOT; };
-		E3F450AA7B514FC3851A05E4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/tests/unittests/minitest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = minitest.h; path = include/readerwriterqueue/tests/unittests/minitest.h; sourceTree = SOURCE_ROOT; };
-		E6B8C8F72C6F494D95CEA801 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/tests/common/simplethread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = simplethread.h; path = include/readerwriterqueue/tests/common/simplethread.h; sourceTree = SOURCE_ROOT; };
-		E940BAC9B26C41E4B767631D /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_string.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_string.h; path = include/c74_min_string.h; sourceTree = SOURCE_ROOT; };
-		E9B58B6D4620449C9442BA89 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_attribute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_attribute.h; path = include/c74_min_attribute.h; sourceTree = SOURCE_ROOT; };
-		F19365FE06C5441FB6AD4D91 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dictionary.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_dictionary.h; path = include/c74_min_dictionary.h; sourceTree = SOURCE_ROOT; };
-		F293324EF1454D7F89C9E0D9 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		F75E037BA5F941B5BEEE818E /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object_wrapper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_object_wrapper.h; path = include/c74_min_object_wrapper.h; sourceTree = SOURCE_ROOT; };
+		087D1D490799465C99FC3356 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/mock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0C5E996067C24D8894B87E96 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_symbol.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_symbol.h; path = include/c74_min_symbol.h; sourceTree = SOURCE_ROOT; };
+		1119FCE66A3247D8B1E65187 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_object.h; path = include/c74_min_object.h; sourceTree = SOURCE_ROOT; };
+		14E83B9DB6FC4FF7BFF2AE21 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_matrix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_operator_matrix.h; path = include/c74_min_operator_matrix.h; sourceTree = SOURCE_ROOT; };
+		198FF8B49D2948E3BD477382 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_texteditor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_texteditor.h; path = include/c74_min_texteditor.h; sourceTree = SOURCE_ROOT; };
+		220C33C5AB9840F7AEA21BE5 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_logger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_logger.h; path = include/c74_min_logger.h; sourceTree = SOURCE_ROOT; };
+		2754010F49904ABF9647237B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/tests/common/simplethread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = simplethread.h; path = include/readerwriterqueue/tests/common/simplethread.h; sourceTree = SOURCE_ROOT; };
+		347D6A849DA34BB18F8E24AA /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_outlet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_outlet.h; path = include/c74_min_outlet.h; sourceTree = SOURCE_ROOT; };
+		3AE083C5641F465F842EE526 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_unittest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_unittest.h; path = include/c74_min_unittest.h; sourceTree = SOURCE_ROOT; };
+		3C56A28CCB6A47B68EB74B86 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dictionary.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_dictionary.h; path = include/c74_min_dictionary.h; sourceTree = SOURCE_ROOT; };
+		3D42C86DDF7D4C98A062F1E8 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_catch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_catch.h; path = include/c74_min_catch.h; sourceTree = SOURCE_ROOT; };
+		4C8EB54722604A269F74F943 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_queue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_queue.h; path = include/c74_min_queue.h; sourceTree = SOURCE_ROOT; };
+		4C96D9C6D63241E38B566744 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_buffer_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_buffer_impl.h; path = include/c74_min_buffer_impl.h; sourceTree = SOURCE_ROOT; };
+		4ECE9B85BFB94ED5AF7157FA /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_atom.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_atom.h; path = include/c74_min_atom.h; sourceTree = SOURCE_ROOT; };
+		4F806AFBDDB54ACF9DA2FFD4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_dataspace.h; path = include/c74_min_dataspace.h; sourceTree = SOURCE_ROOT; };
+		5015E8A6EFF74B67B447599B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_inlet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_inlet.h; path = include/c74_min_inlet.h; sourceTree = SOURCE_ROOT; };
+		53BA0BF977444445A3A0F780 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_limit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_limit.h; path = include/c74_min_limit.h; sourceTree = SOURCE_ROOT; };
+		5C7BDA82772B426CA48BD264 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/benchmarks/ext/folly/ProducerConsumerQueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ProducerConsumerQueue.h; path = include/readerwriterqueue/benchmarks/ext/folly/ProducerConsumerQueue.h; sourceTree = SOURCE_ROOT; };
+		5E5A968E682F4EDF86C138B4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_gain.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_dataspace_gain.h; path = include/c74_min_dataspace_gain.h; sourceTree = SOURCE_ROOT; };
+		604364B71B8D4363A5716346 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/murmur/Murmur3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Murmur3.h; path = include/murmur/Murmur3.h; sourceTree = SOURCE_ROOT; };
+		65F76F236E6B450394F38C90 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_graphics.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_graphics.h; path = include/c74_min_graphics.h; sourceTree = SOURCE_ROOT; };
+		66C67CB1A82E465BB5D0E083 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/atomicops.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = atomicops.h; path = include/readerwriterqueue/atomicops.h; sourceTree = SOURCE_ROOT; };
+		6B1D3248B6AB4352A25B7EB7 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_sample.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_operator_sample.h; path = include/c74_min_operator_sample.h; sourceTree = SOURCE_ROOT; };
+		74781DE6919342518EB9C03C /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/readerwriterqueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = readerwriterqueue.h; path = include/readerwriterqueue/readerwriterqueue.h; sourceTree = SOURCE_ROOT; };
+		7A9C0AACB6C045DEBE76CD20 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_api.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_api.h; path = include/c74_min_api.h; sourceTree = SOURCE_ROOT; };
+		7CFFDEA7E6DA48EDA6548396 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_time.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_dataspace_time.h; path = include/c74_min_dataspace_time.h; sourceTree = SOURCE_ROOT; };
+		80A1E8FD33F8493ABC31F854 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object_components.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_object_components.h; path = include/c74_min_object_components.h; sourceTree = SOURCE_ROOT; };
+		88990DC7867449F19B0CAA9D /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object_wrapper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_object_wrapper.h; path = include/c74_min_object_wrapper.h; sourceTree = SOURCE_ROOT; };
+		8C81FE6169144CF7A528316D /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_timer.h; path = include/c74_min_timer.h; sourceTree = SOURCE_ROOT; };
+		8D1CBD7FA10F41C6BB21CD03 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_time.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_time.h; path = include/c74_min_time.h; sourceTree = SOURCE_ROOT; };
+		99DB2443AA574A5EBD02D617 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_operator_vector.h; path = include/c74_min_operator_vector.h; sourceTree = SOURCE_ROOT; };
+		9CEEACEFE671426280243138 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/tests/unittests/minitest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = minitest.h; path = include/readerwriterqueue/tests/unittests/minitest.h; sourceTree = SOURCE_ROOT; };
+		9F4E9DDCEF9840FA9DFB07DC /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_attribute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_attribute.h; path = include/c74_min_attribute.h; sourceTree = SOURCE_ROOT; };
+		A24A233C1752434FB7C2374D /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_threadsafety.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_threadsafety.h; path = include/c74_min_threadsafety.h; sourceTree = SOURCE_ROOT; };
+		A675C8C44BAE4277BB5E7A59 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_impl.h; path = include/c74_min_impl.h; sourceTree = SOURCE_ROOT; };
+		B2D33D16A0F0409A85EF5466 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_doc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_doc.h; path = include/c74_min_doc.h; sourceTree = SOURCE_ROOT; };
+		B4D84F27EA994F728BD7D62C /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_flags.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_flags.h; path = include/c74_min_flags.h; sourceTree = SOURCE_ROOT; };
+		BC30130F4FA6456684CDFF45 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_path.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_path.h; path = include/c74_min_path.h; sourceTree = SOURCE_ROOT; };
+		BCFF1102DFB14004BFB282DD /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_mc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_operator_mc.h; path = include/c74_min_operator_mc.h; sourceTree = SOURCE_ROOT; };
+		C0805A5E5D2D46DA83DB4C38 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CC1AE93CCD704C69B9FD3ADE /* mock_kernel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libmock_kernel.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D301A9B051964EB8B95F5924 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min.h; path = include/c74_min.h; sourceTree = SOURCE_ROOT; };
+		D4FFCE47CD3C415FAE4839C9 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_ui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_operator_ui.h; path = include/c74_min_operator_ui.h; sourceTree = SOURCE_ROOT; };
+		D59BEEE1C6474E599C2DFAD4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_message.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_message.h; path = include/c74_min_message.h; sourceTree = SOURCE_ROOT; };
+		DE372E57AAEF427F90D8E728 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/c74_mock.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = c74_mock.cpp; path = test/mock/c74_mock.cpp; sourceTree = SOURCE_ROOT; };
+		E561F52263AB4F52BC7F4101 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_attribute_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_attribute_impl.h; path = include/c74_min_attribute_impl.h; sourceTree = SOURCE_ROOT; };
+		EC77B62110F24EA79F058C83 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_string.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_string.h; path = include/c74_min_string.h; sourceTree = SOURCE_ROOT; };
+		F2C518CBE3364D1F90826E7E /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_port.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_port.h; path = include/c74_min_port.h; sourceTree = SOURCE_ROOT; };
+		F3ECC3664C0445229DB21E94 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_argument.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_argument.h; path = include/c74_min_argument.h; sourceTree = SOURCE_ROOT; };
+		F4099E7D6D6A4C87BFBF3C51 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F7D7CCBE0D9C4E84A41FA7D0 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_none.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_dataspace_none.h; path = include/c74_min_dataspace_none.h; sourceTree = SOURCE_ROOT; };
+		F8008F038720427D9091CA1A /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FF396A64662246A487CA40AA /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = c74_min_buffer.h; path = include/c74_min_buffer.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		23FEB5A899EE409C92DB22BF /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				258CB209109441D8B16843E3 /* CMake Rules */,
-				F293324EF1454D7F89C9E0D9 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		258CB209109441D8B16843E3 /* CMake Rules */ = {
+		065CF2B84E9A4EFEBB33D489 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		59E336B95CA842AA8166E38E /* Header Files */ = {
+		17AEC21CA51743C684976927 /* doc */ = {
 			isa = PBXGroup;
 			children = (
-				DC9D134881614E1FA4BE76EF /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min.h */,
-				514A3A39DC194FBDA6CF49AA /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_api.h */,
-				DED02827DF8C4DAB88AE64E1 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_argument.h */,
-				E2BBFA1BF7F142B594A06F9D /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_atom.h */,
-				E9B58B6D4620449C9442BA89 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_attribute.h */,
-				878D64078F6A4139944336C7 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_attribute_impl.h */,
-				2BAAB3100A4E4DCE842AE6B4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_buffer.h */,
-				7A8D7BA22AAF4733A4EC470C /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_buffer_impl.h */,
-				BE6D637EF3F749D591E0EB6A /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_catch.h */,
-				61526AB5E8FB47F18CF92A84 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace.h */,
-				830D9F64D69C48AB8C8F303F /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_gain.h */,
-				196750731D2545FC86A88A59 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_none.h */,
-				492F5351DA684AD68CC965F4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_time.h */,
-				F19365FE06C5441FB6AD4D91 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dictionary.h */,
-				6A70247B32A24487B10EF833 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_doc.h */,
-				6045A62D3B9148B9BEF6C264 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_flags.h */,
-				6B460FFBA25A4CC39879B248 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_graphics.h */,
-				81AD8B17EF8F4563A816E96B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_impl.h */,
-				B692D0508BC44778936C435C /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_inlet.h */,
-				6740A2EA59F64AADA3B12D70 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_limit.h */,
-				88A4BDCFB1824CB6BF1CBA32 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_logger.h */,
-				46E8162321E74B8EBE4B0BCB /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_message.h */,
-				59981D5D791646AEBA3DD6D4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object.h */,
-				6E1BC76B851B493581A75947 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object_components.h */,
-				F75E037BA5F941B5BEEE818E /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object_wrapper.h */,
-				30B4A5585196477AA13F7665 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_matrix.h */,
-				23BBE31E64F24A5DA0A6A117 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_mc.h */,
-				12F20793D12D4729906DADD5 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_sample.h */,
-				A4FB3816750C4E709080C169 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_ui.h */,
-				2FFB4EF46405412FB3617A40 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_vector.h */,
-				8F76F42F4B9547FEA46EE724 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_outlet.h */,
-				73593EE511534CA9A88796CC /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_path.h */,
-				D28AEE7C45E04EC6AB1B6FC8 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_port.h */,
-				39EC3019E3D141B6B7B13F92 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_queue.h */,
-				E940BAC9B26C41E4B767631D /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_string.h */,
-				84BB7BB3AC484E46B6BF3F91 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_symbol.h */,
-				BEAB0D75931A4EBD8A2D7800 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_texteditor.h */,
-				BDCE2EE482C743D182738C9B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_threadsafety.h */,
-				BBC5907E497049FFA4971E11 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_time.h */,
-				ADA7AE00D73949A98F88350B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_timer.h */,
-				7BC72B777CFB4DCA83B9FD09 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_unittest.h */,
-				948B9C4DCCC04E73B0AD16BB /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/murmur/Murmur3.h */,
-				D5574C43C90148DBBAE79D63 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/atomicops.h */,
-				326303444EDD4D0CA58682F2 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/benchmarks/ext/1024cores/spscqueue.h */,
-				D2E8535CCC69427BBE9106A5 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/benchmarks/ext/folly/ProducerConsumerQueue.h */,
-				1568447A422B44078B85963A /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/benchmarks/systemtime.h */,
-				2535ACF70BB64C0894E36527 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/readerwriterqueue.h */,
-				E6B8C8F72C6F494D95CEA801 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/tests/common/simplethread.h */,
-				E3F450AA7B514FC3851A05E4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/tests/unittests/minitest.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		78EBB281347449FB9E88AB18 /* mock_kernel */ = {
-			isa = PBXGroup;
-			children = (
-				C2EA7EE034B64D628E331063 /* Source Files */,
-				9D8BE1BC5F95403F9088F90B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/CMakeLists.txt */,
-			);
-			name = mock_kernel;
-			sourceTree = "<group>";
-		};
-		C2EA7EE034B64D628E331063 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				7FFCCF6978EB417FA2FF81F7 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/c74_mock.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		D5E88487EB1049898BBB663D /* doc */ = {
-			isa = PBXGroup;
-			children = (
-				DB99F9A0726B4CA4A44D8E84 /* CMake Rules */,
-				A05DD29E9BCE4CB6B047F090 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */,
+				065CF2B84E9A4EFEBB33D489 /* CMake Rules */,
+				C0805A5E5D2D46DA83DB4C38 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */,
 			);
 			name = doc;
 			sourceTree = "<group>";
 		};
-		D6168741E8564FDFAC56F38F /* API */ = {
+		36617382E3FB49A3B1356ACC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59E336B95CA842AA8166E38E /* Header Files */,
-				A291C7CD4EE848298FF7B6D9 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */,
+				CC1AE93CCD704C69B9FD3ADE /* mock_kernel */,
 			);
-			name = API;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		DB99F9A0726B4CA4A44D8E84 /* CMake Rules */ = {
+		6F96EFCC71484EAFB0DFE3FF /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D301A9B051964EB8B95F5924 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min.h */,
+				7A9C0AACB6C045DEBE76CD20 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_api.h */,
+				F3ECC3664C0445229DB21E94 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_argument.h */,
+				4ECE9B85BFB94ED5AF7157FA /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_atom.h */,
+				9F4E9DDCEF9840FA9DFB07DC /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_attribute.h */,
+				E561F52263AB4F52BC7F4101 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_attribute_impl.h */,
+				FF396A64662246A487CA40AA /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_buffer.h */,
+				4C96D9C6D63241E38B566744 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_buffer_impl.h */,
+				3D42C86DDF7D4C98A062F1E8 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_catch.h */,
+				4F806AFBDDB54ACF9DA2FFD4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace.h */,
+				5E5A968E682F4EDF86C138B4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_gain.h */,
+				F7D7CCBE0D9C4E84A41FA7D0 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_none.h */,
+				7CFFDEA7E6DA48EDA6548396 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dataspace_time.h */,
+				3C56A28CCB6A47B68EB74B86 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_dictionary.h */,
+				B2D33D16A0F0409A85EF5466 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_doc.h */,
+				B4D84F27EA994F728BD7D62C /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_flags.h */,
+				65F76F236E6B450394F38C90 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_graphics.h */,
+				A675C8C44BAE4277BB5E7A59 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_impl.h */,
+				5015E8A6EFF74B67B447599B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_inlet.h */,
+				53BA0BF977444445A3A0F780 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_limit.h */,
+				220C33C5AB9840F7AEA21BE5 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_logger.h */,
+				D59BEEE1C6474E599C2DFAD4 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_message.h */,
+				1119FCE66A3247D8B1E65187 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object.h */,
+				80A1E8FD33F8493ABC31F854 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object_components.h */,
+				88990DC7867449F19B0CAA9D /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_object_wrapper.h */,
+				14E83B9DB6FC4FF7BFF2AE21 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_matrix.h */,
+				BCFF1102DFB14004BFB282DD /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_mc.h */,
+				6B1D3248B6AB4352A25B7EB7 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_sample.h */,
+				D4FFCE47CD3C415FAE4839C9 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_ui.h */,
+				99DB2443AA574A5EBD02D617 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_operator_vector.h */,
+				347D6A849DA34BB18F8E24AA /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_outlet.h */,
+				BC30130F4FA6456684CDFF45 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_path.h */,
+				F2C518CBE3364D1F90826E7E /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_port.h */,
+				4C8EB54722604A269F74F943 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_queue.h */,
+				EC77B62110F24EA79F058C83 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_string.h */,
+				0C5E996067C24D8894B87E96 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_symbol.h */,
+				198FF8B49D2948E3BD477382 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_texteditor.h */,
+				A24A233C1752434FB7C2374D /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_threadsafety.h */,
+				8D1CBD7FA10F41C6BB21CD03 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_time.h */,
+				8C81FE6169144CF7A528316D /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_timer.h */,
+				3AE083C5641F465F842EE526 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/c74_min_unittest.h */,
+				604364B71B8D4363A5716346 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/murmur/Murmur3.h */,
+				66C67CB1A82E465BB5D0E083 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/atomicops.h */,
+				5C7BDA82772B426CA48BD264 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/benchmarks/ext/folly/ProducerConsumerQueue.h */,
+				74781DE6919342518EB9C03C /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/readerwriterqueue.h */,
+				2754010F49904ABF9647237B /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/tests/common/simplethread.h */,
+				9CEEACEFE671426280243138 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/include/readerwriterqueue/tests/unittests/minitest.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		7C95BE3FFE0B49DE943E8EE4 = {
+			isa = PBXGroup;
+			children = (
+				17AEC21CA51743C684976927 /* doc */,
+				BDD2C93BCBFA489AA2A16FB2 /* API */,
+				AEB6AEDA53FC4BFB8AB4ACF7 /* ALL_BUILD */,
+				C67A28FF63204F68978719C2 /* mock_kernel */,
+				36617382E3FB49A3B1356ACC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		826360C09CD149DD95A6DBEF /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		FD211357CEBF403D815DB658 /* Products */ = {
+		AB2454761A2040A383E12671 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				2B4B358B47CF4C4EADA2200B /* mock_kernel */,
+				DE372E57AAEF427F90D8E728 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/c74_mock.cpp */,
 			);
-			name = Products;
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		FEC3E23769264301BBD4DA9D = {
+		AEB6AEDA53FC4BFB8AB4ACF7 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				D5E88487EB1049898BBB663D /* doc */,
-				D6168741E8564FDFAC56F38F /* API */,
-				23FEB5A899EE409C92DB22BF /* ALL_BUILD */,
-				78EBB281347449FB9E88AB18 /* mock_kernel */,
-				FD211357CEBF403D815DB658 /* Products */,
+				826360C09CD149DD95A6DBEF /* CMake Rules */,
+				F8008F038720427D9091CA1A /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */,
 			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		BDD2C93BCBFA489AA2A16FB2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6F96EFCC71484EAFB0DFE3FF /* Header Files */,
+				F4099E7D6D6A4C87BFBF3C51 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/CMakeLists.txt */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		C67A28FF63204F68978719C2 /* mock_kernel */ = {
+			isa = PBXGroup;
+			children = (
+				AB2454761A2040A383E12671 /* Source Files */,
+				087D1D490799465C99FC3356 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/CMakeLists.txt */,
+			);
+			name = mock_kernel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F9225E26C70C4C2E8A3B4BA0 /* mock_kernel */ = {
+		2547C114CF1D4BFDAB7208F4 /* mock_kernel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 086DCDFEEA98412E94389875 /* Build configuration list for PBXNativeTarget "mock_kernel" */;
+			buildConfigurationList = E1C1230AE8BA447AAA125231 /* Build configuration list for PBXNativeTarget "mock_kernel" */;
 			buildPhases = (
-				CD8EE19C9DEA42DDBBCFF003 /* Sources */,
-				5A15935D16F44ECABB7FDD45 /* CMake PostBuild Rules */,
+				3C964A7923334E55827BBF1C /* Sources */,
+				0675CD89F52944688B2F39DE /* CMake PostBuild Rules */,
 			);
 			buildRules = (
 			);
@@ -350,71 +346,45 @@
 			);
 			name = mock_kernel;
 			productName = mock_kernel;
-			productReference = 2B4B358B47CF4C4EADA2200B /* mock_kernel */;
+			productReference = CC1AE93CCD704C69B9FD3ADE /* mock_kernel */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C413490D25F14C37AC9C5894 /* Project object */ = {
+		EEB131AC942F4001BCA065DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1110;
 			};
-			buildConfigurationList = C158BA77B0D04F189D945AC0 /* Build configuration list for PBXProject "min-api" */;
+			buildConfigurationList = E18EF8886F3B4C4B9DCDDAC3 /* Build configuration list for PBXProject "min-api" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				A8E39B1A2A6442369B568FD4 /* Debug */,
-				18572ED0BD41419FA3111F8D /* Release */,
-				1EA6306E300740C0B9E09DEA /* MinSizeRel */,
-				AE9959B681484676844A64E5 /* RelWithDebInfo */,
+				7E4F01A892264C209D156586 /* Debug */,
+				DEC85D4A1DD24604A0504257 /* Release */,
+				4E0510737A57493DA165D6F5 /* MinSizeRel */,
+				EB28FA2F1BB84B448A870F2B /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = FEC3E23769264301BBD4DA9D;
+			mainGroup = 7C95BE3FFE0B49DE943E8EE4;
 			projectDirPath = "../../../source/min-api";
 			projectRoot = "";
 			targets = (
-				69CF0BF42EDF4830B5E0E634 /* ALL_BUILD */,
-				B9D183AC616247F293ECA3E9 /* API */,
-				2254694FDF784494B1ABCA37 /* RUN_TESTS */,
-				CBE3233CE72442239B890A9E /* ZERO_CHECK */,
-				8180B42E139949B1BB81E795 /* doc */,
-				F9225E26C70C4C2E8A3B4BA0 /* mock_kernel */,
+				8025B10BD2514FBE945DEBB6 /* ALL_BUILD */,
+				D01056A564BB4C6A87F0EC4A /* API */,
+				3530DD410FAF4220BF05A90E /* RUN_TESTS */,
+				5D3B87A860D943A2B183E15F /* ZERO_CHECK */,
+				5E139A0ADB594F5EADB82F6A /* doc */,
+				2547C114CF1D4BFDAB7208F4 /* mock_kernel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06AAEAB4C01C46E6BE7F297C /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api -f /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api/CMakeScripts/doc_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
-			showEnvVarsInLog = 0;
-		};
-		3CBA67356AA94084BC601192 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		5A15935D16F44ECABB7FDD45 /* CMake PostBuild Rules */ = {
+		0675CD89F52944688B2F39DE /* CMake PostBuild Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -425,7 +395,7 @@ exit 0";
 			shellScript = "make -C /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api/test/mock -f /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api/test/mock/CMakeScripts/mock_kernel_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
-		5BC5B2A04DCA494AAA968AEA = {
+		11BC4EA07BCB4A50B22ED42A = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,7 +410,7 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		81B2206D5EA14EE2A990C0A5 = {
+		13ECCC4A6F394438891A32CF = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,7 +425,22 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		ABA1A2CF7C1B457493708A8E /* CMake Rules */ = {
+		2527D4985B39432593F52858 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5EA2B993D5CD4B54940FF7CD /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -463,10 +448,10 @@ exit 0";
 			name = "CMake Rules";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api -f /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			shellScript = "make -C /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api -f /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api/CMakeScripts/doc_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
-		B0A8EF4EE2E6450A92678D3A = {
+		64359B153E714273BD1FD281 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -481,7 +466,7 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		DAFA8288E87546BA99199ABE /* CMake Rules */ = {
+		84C8D1D1E51847D9B72DF5CC /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -492,7 +477,7 @@ exit 0";
 			shellScript = "make -C /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api -f /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
-		F2966C676A314F3A845FD84F = {
+		92783FAD47584FBBA2E5AF6D = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -507,7 +492,7 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		FBF55F5EC27C4717A4181FCA /* CMake PostBuild Rules */ = {
+		DFD030D5C94F4D8B8084A348 /* CMake PostBuild Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -518,129 +503,60 @@ exit 0";
 			shellScript = "make -C /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api -f /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
+		FF0435FBC8314497B0A6911A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api -f /Users/leico_studio/Documents/Max\\ 8/Packages/lei/build/source/min-api/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CD8EE19C9DEA42DDBBCFF003 /* Sources */ = {
+		3C964A7923334E55827BBF1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53F9F2D5572644D88E9A2AA9 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/c74_mock.cpp */,
+				C4C6CE43F21544EEB1D62B29 /* /Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/c74_mock.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2DB1F0A8F5E942E49E2CAD59 /* PBXTargetDependency */ = {
+		6509BB2F4CE741AC8D411235 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBE3233CE72442239B890A9E /* ZERO_CHECK */;
-			targetProxy = AC4BC45EB97B42088A8DFF44 /* PBXContainerItemProxy */;
+			target = 5D3B87A860D943A2B183E15F /* ZERO_CHECK */;
+			targetProxy = D8DBFF2D179A4F449576FD50 /* PBXContainerItemProxy */;
 		};
-		35413A1EDB97474CBAA21468 /* PBXTargetDependency */ = {
+		72B114F7B8D84A5DBABF04FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBE3233CE72442239B890A9E /* ZERO_CHECK */;
-			targetProxy = 334D19C874744F13A4BCDF31 /* PBXContainerItemProxy */;
+			target = D01056A564BB4C6A87F0EC4A /* API */;
+			targetProxy = E9EA2B53E1AF47D0B276F137 /* PBXContainerItemProxy */;
 		};
-		8D1DB43AA3CF4DA7AFE60217 /* PBXTargetDependency */ = {
+		930F738AEDC948CC80F2468C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBE3233CE72442239B890A9E /* ZERO_CHECK */;
-			targetProxy = 8323F5976BC44335B68EB1D9 /* PBXContainerItemProxy */;
+			target = 2547C114CF1D4BFDAB7208F4 /* mock_kernel */;
+			targetProxy = 5155C4A3A3BF4E65A117A2EF /* PBXContainerItemProxy */;
 		};
-		AC6E24A6324F48DDBDE4F8A3 /* PBXTargetDependency */ = {
+		A5D945C30C32496D9BA8C54D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9D183AC616247F293ECA3E9 /* API */;
-			targetProxy = E6C667394C294D6DBA48A80F /* PBXContainerItemProxy */;
+			target = 5D3B87A860D943A2B183E15F /* ZERO_CHECK */;
+			targetProxy = C5744AFF7E04458F91F8D7E3 /* PBXContainerItemProxy */;
 		};
-		BDEEABDC4FD248DA80E1936D /* PBXTargetDependency */ = {
+		F7A749537026427A83E8C7B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F9225E26C70C4C2E8A3B4BA0 /* mock_kernel */;
-			targetProxy = 64906EFED6EA48B19773D035 /* PBXContainerItemProxy */;
+			target = 5D3B87A860D943A2B183E15F /* ZERO_CHECK */;
+			targetProxy = 55DCFEE24EAC4CCB970B84C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07E215A0F9404FBAB3F14C0B /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		0CFE112F7BB64670BB75C473 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		22CC56CC88744542A0E50B98 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = doc;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		334124BDD8DA4EFD9EABEAE8 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		39564ED81F2D4E63878416FB /* RelWithDebInfo */ = {
+		1387ACA48DDE490BB79AA470 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
@@ -671,17 +587,7 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		4310E6AAB6E3445B9023D3F4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/build";
-			};
-			name = Debug;
-		};
-		4D1EC1DE5F864C4F80EA9A52 /* Debug */ = {
+		14401BFF988448209191B319 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -693,97 +599,7 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = API;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		587A72FD576C46029742D378 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = API;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		5D756649A063411FB06096CE /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/build";
-			};
-			name = RelWithDebInfo;
-		};
-		6931DC4F456040E69C1CE687 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		6B5452D5D5FD4425A56F06E5 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = API;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		8368511C232C4071B2EEF896 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
+				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
 				USE_HEADERMAP = NO;
@@ -791,27 +607,17 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		86C050B662C04405A3D9500A /* Debug */ = {
+		251B069C53794CF981C4B549 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = doc;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/build";
 			};
 			name = Debug;
 		};
-		89AB380753E64912B1B71F1A /* Release */ = {
+		2A2706D77148470A9180CF3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -829,19 +635,49 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = Release;
+			name = Debug;
 		};
-		9B57F27BED58452F945E3A29 /* Release */ = {
+		2B89E56DF7704353933E4677 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/build";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = Release;
+			name = RelWithDebInfo;
 		};
-		9DC921859151446BB0CFE905 /* MinSizeRel */ = {
+		2C57062A3EB94B918CD2F7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = API;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		39FC45985A054BF78D3D9C6F /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -861,7 +697,17 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		A1422B814E664B24AA74D33F /* Release */ = {
+		3F893F532D63450B8EDA6089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/build";
+			};
+			name = Release;
+		};
+		4302B6C2394148CA82929D80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -873,7 +719,7 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = doc;
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
 				USE_HEADERMAP = NO;
@@ -881,7 +727,17 @@ exit 0";
 			};
 			name = Release;
 		};
-		A3727BA728D6422184D74124 /* MinSizeRel */ = {
+		43D91BFA996D466697AC7F78 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/build";
+			};
+			name = RelWithDebInfo;
+		};
+		558BE401D05C447094A9B14C /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
@@ -912,67 +768,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		A8443EBE1096413C95FDC401 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		AD67F67D3D9B42D08B74DC6F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		B7CBC47067D8486A8DDA2FF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		BA32D7286D814F7D9D06E8B1 /* MinSizeRel */ = {
+		692E230C87B84D5282C4A5A4 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -992,58 +788,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		CA9A64BEE52048EFBB68A89E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		CAFA52192B944DC5824EE6F2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = x86_64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/leico_studio/Documents/Max 8/Packages/lei/tests";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .dylib;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",mock_kernel_EXPORTS);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/../../../min-api/max-api/include\"","\"/Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/.\"");
-				INSTALL_PATH = "@rpath";
-				LIBRARY_SEARCH_PATHS = "";
-				LIBRARY_STYLE = DYNAMIC;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC '-std=gnu++14'  ";
-				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = mock_kernel;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/test/mock";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		CB822DD49CDC45DC96AC4644 /* RelWithDebInfo */ = {
+		820C47D253684C6BB7A1DA36 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1061,9 +806,9 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = RelWithDebInfo;
+			name = MinSizeRel;
 		};
-		D08D8BFE4C034C27B8F9717E /* Debug */ = {
+		8412954213474B1780012CC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
@@ -1094,17 +839,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		D97B6B22D2A8480FA49DE9C2 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
-				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/build";
-			};
-			name = MinSizeRel;
-		};
-		F2ABE8AD6C4547D982408DF4 /* MinSizeRel */ = {
+		842972F70FB243669DD770E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1122,89 +857,350 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
+			name = Release;
+		};
+		9A209A06B2824B72B26B0230 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9E91FCF6158F46B2AFDA0F56 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A0AD79EB997D4033A9C19993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = API;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		AB136CCF4F6340B093D3E4CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B188A8C9C842420487294619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/leico_studio/Documents/Max 8/Packages/lei/tests";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",mock_kernel_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/../../../min-api/max-api/include\"","\"/Users/leico_studio/Documents/Max 8/Packages/lei/source/min-api/test/mock/.\"");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mock_kernel;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/test/mock";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B7970D7D8E7C40F79693A1B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B8CE8C6F329644FA87B4C037 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
 			name = MinSizeRel;
+		};
+		C8407345FEA447FAB939A072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D9161833712B470DB1E9E2F5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DF8A358361F041E894B89747 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = API;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F159A185D88F49A8A0D76722 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api/build";
+			};
+			name = MinSizeRel;
+		};
+		F501BA691EC343289B4CA5EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		FF43B6F4B204404582661274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/leico_studio/Documents/Max 8/Packages/lei/build/source/min-api";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		086DCDFEEA98412E94389875 /* Build configuration list for PBXNativeTarget "mock_kernel" */ = {
+		577F4AE44A4A4E7F81EE972B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D08D8BFE4C034C27B8F9717E /* Debug */,
-				CAFA52192B944DC5824EE6F2 /* Release */,
-				A3727BA728D6422184D74124 /* MinSizeRel */,
-				39564ED81F2D4E63878416FB /* RelWithDebInfo */,
+				FF43B6F4B204404582661274 /* Debug */,
+				842972F70FB243669DD770E4 /* Release */,
+				14401BFF988448209191B319 /* MinSizeRel */,
+				9E91FCF6158F46B2AFDA0F56 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		3A48DC0151294D95A1D361C9 /* Build configuration list for PBXAggregateTarget "doc" */ = {
+		BAC51D25F688472A8BA8B22A /* Build configuration list for PBXAggregateTarget "doc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86C050B662C04405A3D9500A /* Debug */,
-				A1422B814E664B24AA74D33F /* Release */,
-				22CC56CC88744542A0E50B98 /* MinSizeRel */,
-				CB822DD49CDC45DC96AC4644 /* RelWithDebInfo */,
+				AB136CCF4F6340B093D3E4CF /* Debug */,
+				C8407345FEA447FAB939A072 /* Release */,
+				820C47D253684C6BB7A1DA36 /* MinSizeRel */,
+				D9161833712B470DB1E9E2F5 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A3E914ACC5CC43A5AF732200 /* Build configuration list for PBXAggregateTarget "API" */ = {
+		D462D8BD468E43AF9EA715BB /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4D1EC1DE5F864C4F80EA9A52 /* Debug */,
-				587A72FD576C46029742D378 /* Release */,
-				BA32D7286D814F7D9D06E8B1 /* MinSizeRel */,
-				6B5452D5D5FD4425A56F06E5 /* RelWithDebInfo */,
+				2A2706D77148470A9180CF3E /* Debug */,
+				F501BA691EC343289B4CA5EC /* Release */,
+				39FC45985A054BF78D3D9C6F /* MinSizeRel */,
+				2B89E56DF7704353933E4677 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C158BA77B0D04F189D945AC0 /* Build configuration list for PBXProject "min-api" */ = {
+		E18EF8886F3B4C4B9DCDDAC3 /* Build configuration list for PBXProject "min-api" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4310E6AAB6E3445B9023D3F4 /* Debug */,
-				9B57F27BED58452F945E3A29 /* Release */,
-				D97B6B22D2A8480FA49DE9C2 /* MinSizeRel */,
-				5D756649A063411FB06096CE /* RelWithDebInfo */,
+				251B069C53794CF981C4B549 /* Debug */,
+				3F893F532D63450B8EDA6089 /* Release */,
+				F159A185D88F49A8A0D76722 /* MinSizeRel */,
+				43D91BFA996D466697AC7F78 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D87A848C763B4177BE0340FF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		E1C1230AE8BA447AAA125231 /* Build configuration list for PBXNativeTarget "mock_kernel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8443EBE1096413C95FDC401 /* Debug */,
-				B7CBC47067D8486A8DDA2FF2 /* Release */,
-				8368511C232C4071B2EEF896 /* MinSizeRel */,
-				6931DC4F456040E69C1CE687 /* RelWithDebInfo */,
+				8412954213474B1780012CC6 /* Debug */,
+				B188A8C9C842420487294619 /* Release */,
+				558BE401D05C447094A9B14C /* MinSizeRel */,
+				1387ACA48DDE490BB79AA470 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		EBDE844E8DA94580A0201D5C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		E6CCC0D903FD4E3A85BC0421 /* Build configuration list for PBXAggregateTarget "API" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0CFE112F7BB64670BB75C473 /* Debug */,
-				AD67F67D3D9B42D08B74DC6F /* Release */,
-				F2ABE8AD6C4547D982408DF4 /* MinSizeRel */,
-				07E215A0F9404FBAB3F14C0B /* RelWithDebInfo */,
+				2C57062A3EB94B918CD2F7E8 /* Debug */,
+				A0AD79EB997D4033A9C19993 /* Release */,
+				692E230C87B84D5282C4A5A4 /* MinSizeRel */,
+				DF8A358361F041E894B89747 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		F7AB705448E1432BA3935269 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+		FEA79947262D4BDE8D9FE8D9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA9A64BEE52048EFBB68A89E /* Debug */,
-				89AB380753E64912B1B71F1A /* Release */,
-				9DC921859151446BB0CFE905 /* MinSizeRel */,
-				334124BDD8DA4EFD9EABEAE8 /* RelWithDebInfo */,
+				B7970D7D8E7C40F79693A1B8 /* Debug */,
+				4302B6C2394148CA82929D80 /* Release */,
+				B8CE8C6F329644FA87B4C037 /* MinSizeRel */,
+				9A209A06B2824B72B26B0230 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C413490D25F14C37AC9C5894 /* Project object */;
+	rootObject = EEB131AC942F4001BCA065DC /* Project object */;
 }

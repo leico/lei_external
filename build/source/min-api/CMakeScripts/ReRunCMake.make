@@ -10,6 +10,7 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/Homebrew/Cella
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/Homebrew/Cellar/cmake/3.16.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/Homebrew/Cellar/cmake/3.16.4/share/cmake/Modules/FindPackageMessage.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/.git/modules/source/min-api/HEAD))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/.git/modules/source/min-api/refs/heads/temporary))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/build/source/min-api/CMakeFiles/git-data/grabRef.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/source/min-api/CMakeLists.txt))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/source/min-api/doc/doxyfile.in))

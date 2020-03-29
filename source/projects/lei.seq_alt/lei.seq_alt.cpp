@@ -183,10 +183,6 @@ public:
 
         // end of file
 
-        _seekbar_seconds = currentseconds;
-        _eventcount      = currenteventcount;
-
-
         return {};
         
       }, ""

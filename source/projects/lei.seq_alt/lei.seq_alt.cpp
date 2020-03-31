@@ -26,17 +26,125 @@ public:
     outlet<> read_done_out { this, "(bang) when success read midi file", "bang"};
 
 
+ 
+
+    lei_seq_alt( const atoms& args = {} ) : 
+        _midifile       ( std :: make_unique< smf :: MidiFile  >() )
+      , _eventcount     (0)
+      , _is_readfile    (0)
+      , _seekbar_seconds(0)
+    {}
+
+
+    message<> msg_bang{this, "bang",
+      MIN_FUNCTION{
+
+        const std :: string err_str = "msg_bang : ";
+
+
+        if( inlet != 0 ) {
+          cerr << err_str + "wrong inlet number : " + std :: to_string(inlet) << endl;
+          return {};
+        }
+        smf :: MidiEvent *nextevent = nullptr;
+        
+        if( ! getEvent(&nextevent) ){
+          cerr << err_str + "failed getEvent" << endl;
+          return {};
+        }
+
+        OutputEvent(*nextevent);
+
+        if( ! forwardEventCount() )
+          cerr << err_str + "failed forwardEventCount" << endl;
+
+        return {};
+      }, ""
+    };
+
+
+    message<> terminal{this, "anything",
+      MIN_FUNCTION{
+
+        const std :: string err_str = "terminal function : ";
+
+        if( args.empty() ) {
+          cwarn << err_str << "no arguments, nothing happen" << endl;
+          return {};
+        }
+
+        if( inlet != 0 ) {
+          cerr << err_str << "wrong inlet number : " << std :: to_string(inlet) << endl;
+          return {};
+        }
+
+
+        if(args[0].type() == message_type :: symbol_argument ) { 
+
+          const std :: string message = args[0];
+
+
+          if( message == "start") { 
+            return start_seekbar();
+          }
+          
+          if( message == "stop" ) { 
+            return stop_seekbar();
+          }
+
+          c74 :: min :: atoms arguments = args;
+          arguments.erase( arguments.begin() );
+
+          if( arguments.empty() ) { 
+            cerr << err_str << "arguments size = 0" << endl;
+            return {};
+          }
+
+          if( message == "read") { 
+            return read_file( arguments );
+          }
+
+          if( message == "seek") { 
+            return move_seekbar( arguments );
+          }
+
+          cerr << "wrong type message : " << message << endl;
+          return {};
+        }
+
+        cerr << "arg[0] is not symbol argument" << endl;
+        return {};
+      }, 
+      R"(read [filename] : read midifile 
+seek [msec] : move seekbar
+start : start sequence from seekbar pos"
+stop : stop sequence
+)"
+    };
+
+
+
+    
+
     timer<> metro{ this,
       MIN_FUNCTION{
+
+        std :: string err_str = "metro function : ";
+
 
         std :: vector< smf :: MidiEvent > same_time_events;
 
         while(1){
 
           smf :: MidiEvent* currentevent = nullptr;
-          if( ! goNext( &currentevent) ) break;
+          if( ! getEvent( &currentevent) ) break;
 
           same_time_events.push_back( *currentevent );
+
+          if( ! forwardEventCount() ){
+            cerr << err_str + "failed forwardEventCount, count -> " + std :: to_string( _eventcount ) << endl;
+            return{};
+          }
 
           smf :: MidiEvent* nextevent = nullptr;
           if( ! getEvent( &nextevent) ) break;
@@ -78,171 +186,163 @@ public:
       }
     };
 
-    
-
-    lei_seq_alt( const atoms& args = {} ) : 
-        _midifile       ( std :: make_unique< smf :: MidiFile  >() )
-      , _eventcount     (0)
-      , _is_readfile    (0)
-      , _seekbar_seconds(0)
-    {}
+   
 
 
 
+    c74 :: min :: atoms start_seekbar(void){
 
+      smf :: MidiEvent* nextevent = nullptr;
+      if( ! getEvent( &nextevent )) return {};
 
+      metro.delay(
+        (nextevent -> seconds - _seekbar_seconds) * 1000.
+      );
 
-
-    message<> msg_bang{this, "bang",
-      MIN_FUNCTION{
-
-
-        if( inlet != 0 ) return {};
-
-        smf :: MidiEvent *nextevent = nullptr;
-        if( ! goNext(&nextevent) ) return {};
-
-        OutputEvent(*nextevent);
-
-        return {};
-      }, ""
+      return {};
     };
 
 
 
 
 
-    message<> start_midifile{ this, "start", 
-      MIN_FUNCTION{
-
-        if( inlet != 0 ) return {};
-
-        smf :: MidiEvent* nextevent = nullptr;
-        if( ! getEvent( &nextevent )) return {};
-
-        metro.delay(nextevent -> seconds - _seekbar_seconds);
-
-        return {};
-      }, ""
-    };
-
-
-    message<> stop_midifile{ this, "stop", 
-      MIN_FUNCTION{
-
-        metro.stop();
-
-        return {};
-      }, ""
-    };
 
 
 
-    message<> seek{ this, "seek", 
-      MIN_FUNCTION{
+    c74 :: min :: atoms stop_seekbar(void){
 
-        if( args.size() == 0 ) return {};
-        if( inlet       != 0 ) return {};
+      metro.stop();
 
-
-        if( args[0].type() != message_type :: float_argument && 
-            args[0].type() != message_type :: int_argument ) 
-        {
-          cerr << "argument type does not number argument" << endl;
-          return {};
-        }
-
-        const double sec = static_cast<double>(args[0]) / 1000.;
-
-        if( sec < 0 ) { 
-          cerr << "argument < 0 " << endl;
-          return {};
-        }
-
-
-        metro.stop();
-
-        double currentseconds    = _seekbar_seconds;
-        int    currenteventcount = _eventcount;
-
-        _eventcount = 0;
-
-        smf :: MidiEvent* event = nullptr;
-
-        while( getEvent(&event) ){
-          if( sec > event -> seconds ){
-            goNext(&event);
-            continue;
-          }
-
-          // sec <= eventlist[e].seconds --------
-          // eventlist.size() >= 2, seekbar より先に event があることが保証される
-          _seekbar_seconds = sec;
-          return {};
-        }
-
-        // end of file
-
-        return {};
-        
-      }, ""
+      return {};
     };
 
 
 
 
 
-    message<> read_midifile { this, "read", 
-      MIN_FUNCTION{
 
-        cout << "args size:" << endl;
-        cout << args.size()  << endl;
 
-        cout << "inlet" << endl;
-        cout << inlet   << endl;
 
-        if( args.size() == 0 ) return {};
-        if( inlet       != 0 ) return {};
 
-        if( args[0].type() != message_type :: symbol_argument ) {
-          cerr << "argument type does not symbol argument" << endl;
-          return {};
+    c74 :: min :: atoms move_seekbar(const c74 :: min :: atoms& args){
+
+      const std :: string err_str = "seek function : ";
+
+      if( args.size() == 0 ){
+        cerr << err_str << "args size = 0" << endl;
+        return {};
+      }
+
+      if( args[0].type() != message_type :: float_argument && 
+          args[0].type() != message_type :: int_argument ) 
+      {
+        cerr << "argument type does not number argument" << endl;
+        return {};
+      }
+
+      const double sec = static_cast<double>(args[0]) / 1000.;
+
+      if( sec < 0 ) { 
+        cerr << "argument < 0 " << endl;
+        return {};
+      }
+
+
+      metro.stop();
+
+      _eventcount = 0;
+
+      smf :: MidiEvent* event = nullptr;
+
+      while( getEvent(&event) ){
+        if( sec > event -> seconds ){
+          if( ! forwardEventCount() ){
+            cerr << err_str + "failed forwardEventCount, count -> " + std :: to_string(_eventcount) << endl;
+            return{};
+          };
+          continue;
         }
 
-        metro.stop();
+        // sec <= eventlist[e].seconds --------
+        // eventlist.size() >= 2, seekbar より先に event があることが保証される
+        _seekbar_seconds = sec;
+        return {};
+      }
 
-        _is_readfile = 0;
+      // end of file
 
-        std :: string file_path = path(static_cast< std :: string>( args[0] ));
-        cout << file_path << endl;
+      return {};
 
+    };
+
+
+
+
+
+
+
+
+    c74 :: min :: atoms read_file(const c74 :: min :: atoms& args){
+
+      const std :: string err_str = "read_midifile : ";
+
+      if( args.size() == 0 ){
+        cerr << err_str << "args size = 0 " << endl;
+        return {};
+      }
+
+      if( args[0].type() != message_type :: symbol_argument ) {
+        cerr << "argument type does not symbol argument" << endl;
+        return {};
+      }
+
+      metro.stop();
+
+      _is_readfile = 0;
+
+
+      std :: string file_path;
+
+      try{
+        file_path = static_cast<std :: string>( path(static_cast< std :: string>( args[0] )) );
+      }
+      catch( std :: exception& e ){
+        cerr << err_str << "failed convert path : " << e.what() << endl;
+        return {};
+      }
+
+      cout << file_path << endl;
+
+      try {
         _is_readfile = _midifile.get() -> read( file_path );
+      }
+      catch( std :: exception& e){
+        cerr << err_str << "read : " << e.what() << endl;
+        _is_readfile = 0;
+      }
 
-        if( _is_readfile == 0 ) {
-          cerr << "failed read file" << endl;
-          failed_out.send("bang");
-          return {};
-        }
-
-        for( int i = 0, end = _midifile.get() -> size() ; i < end ; ++ i )
-          cout << (*_midifile.get())[i].size() << endl;
-
-        _midifile.get() -> doTimeAnalysis();
-        _midifile.get() -> linkNotePairs();
-        _midifile.get() -> joinTracks();
-
-
-        _eventcount      = 0;
-        _seekbar_seconds = 0;
-
-
-        read_done_out.send("bang");
-
-
+      if( _is_readfile == 0 ) {
+        cerr << "failed read file" << endl;
+        failed_out.send("bang");
         return {};
-      }, ""
+      }
+
+      for( int i = 0, end = _midifile.get() -> size() ; i < end ; ++ i )
+        cout << (*_midifile.get())[i].size() << endl;
+
+      _midifile.get() -> doTimeAnalysis();
+      _midifile.get() -> linkNotePairs();
+      _midifile.get() -> joinTracks();
+
+
+      _eventcount      = 0;
+      _seekbar_seconds = 0;
+
+
+      read_done_out.send("bang");
+
+      return {};
     };
-    // post to max window == but only when the class is loaded the first time
 
     message<> maxclass_setup { this, "maxclass_setup",
       MIN_FUNCTION {
@@ -254,8 +354,8 @@ private :
 
 
 
-    void OutputEvent(const smf :: MidiEvent& event){
-      
+    void OutputEvent(const smf :: MidiEvent& event) {
+
       for( int i = 0, end = event.size() ; i < end ; ++ i )
         message_out.send( static_cast<int>( event[i] ) );
 
@@ -263,32 +363,7 @@ private :
     }
 
 
-    const bool getEvent(smf :: MidiEvent** event){
-
-      smf :: MidiEventList* eventlist = nullptr;
-      if( ! getEventList(&eventlist) ) return false;
-
-      if( _eventcount >= eventlist -> size() ){
-        cout << "end of file" << endl;
-        return false;
-      }
-
-      *event = &(*_midifile.get())[0][_eventcount];
-      return true;
-    }
-
-
-    const bool goNext(smf :: MidiEvent** event){
-      if( ! getEvent( event ) ) return false;
-      _seekbar_seconds = (*event) -> seconds;
-      ++ _eventcount; 
-      return true; 
-    }
-
-
-
-
-    const bool is_MidiFileReady(void){
+    const bool is_MidiFileReady(void) {
 
       if( ! _midifile ) return false;
 
@@ -306,13 +381,45 @@ private :
     }
 
 
-    const bool getEventList(smf :: MidiEventList** eventlist){
+    const bool getEventList(smf :: MidiEventList** eventlist) {
 
       if( ! is_MidiFileReady() ) return false;
 
       *eventlist = &(*_midifile.get())[0];
       return true;
     }
+
+
+
+
+    const bool getEvent(smf :: MidiEvent** event){
+
+      smf :: MidiEventList* eventlist = nullptr;
+      if( ! getEventList(&eventlist) ) return false;
+
+      if( _eventcount >= eventlist -> size() ){
+        cout << "end of file" << endl;
+        return false;
+      }
+
+      *event = &(*_midifile.get())[0][_eventcount];
+      return true;
+    }
+
+    const bool forwardEventCount(void){
+
+      smf :: MidiEventList *eventlist;
+      smf :: MidiEvent *event;
+      if( ! getEvent    ( &event ) )     return false;
+      if( ! getEventList( &eventlist ) ) return false;
+
+      _seekbar_seconds = event -> seconds;
+      _eventcount      = (_eventcount + 1) < eventlist -> size() ? (_eventcount + 1) : _eventcount ;
+
+      return true;
+    }
+
+
 
 
 

@@ -29,29 +29,22 @@
 
 	<methodlist>
 
-		<method name='read'>
-			<digest></digest>
-			<description></description>
-		</method>
-
 		<method name='bang'>
 			<digest></digest>
 			<description></description>
 		</method>
 
-		<method name='stop'>
-			<digest></digest>
-			<description></description>
-		</method>
-
-		<method name='start'>
-			<digest></digest>
-			<description></description>
-		</method>
-
-		<method name='seek'>
-			<digest></digest>
-			<description></description>
+		<method name='anything'>
+			<digest>read <o>filename</o> : read midifile 
+seek <o>msec</o> : move seekbar
+start : start sequence from seekbar pos"
+stop : stop sequence
+ </digest>
+			<description>read <o>filename</o> : read midifile 
+seek <o>msec</o> : move seekbar
+start : start sequence from seekbar pos"
+stop : stop sequence
+ </description>
 		</method>
 
 	</methodlist>

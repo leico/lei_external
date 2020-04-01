@@ -36,6 +36,15 @@ public:
     {}
 
 
+
+    message<> maxclass_setup { this, "maxclass_setup",
+      MIN_FUNCTION {
+        return {};
+      }
+    };
+
+
+
     message<> msg_bang{this, "bang",
       MIN_FUNCTION{
 
@@ -123,8 +132,7 @@ stop : stop sequence
     };
 
 
-
-    
+private :
 
     timer<> metro{ this,
       MIN_FUNCTION{
@@ -287,12 +295,13 @@ stop : stop sequence
       const std :: string err_str = "read_midifile : ";
 
       if( args.size() == 0 ){
-        cerr << err_str << "args size = 0 " << endl;
+        FailedReadFile( err_str + "args size = 0");
         return {};
       }
 
+
       if( args[0].type() != message_type :: symbol_argument ) {
-        cerr << "argument type does not symbol argument" << endl;
+        FailedReadFile( err_str + "argument type does not symbol argument");
         return {};
       }
 
@@ -307,7 +316,7 @@ stop : stop sequence
         file_path = static_cast<std :: string>( path(static_cast< std :: string>( args[0] )) );
       }
       catch( std :: exception& e ){
-        cerr << err_str << "failed convert path : " << e.what() << endl;
+        FailedReadFile( err_str + "failed convert path : " + e.what() );
         return {};
       }
 
@@ -317,13 +326,13 @@ stop : stop sequence
         _is_readfile = _midifile.get() -> read( file_path );
       }
       catch( std :: exception& e){
-        cerr << err_str << "read : " << e.what() << endl;
+        FailedReadFile( err_str + "read : " + e.what() );
         _is_readfile = 0;
+        return {};
       }
 
       if( _is_readfile == 0 ) {
-        cerr << "failed read file" << endl;
-        failed_out.send("bang");
+        FailedReadFile( err_str + "failed read file" );
         return {};
       }
 
@@ -344,14 +353,16 @@ stop : stop sequence
       return {};
     };
 
-    message<> maxclass_setup { this, "maxclass_setup",
-      MIN_FUNCTION {
-        return {};
-      }
-    };
 
-private :
 
+    void FailedReadFile( const std :: string& err_str ){
+
+      cerr << err_str << endl;
+      failed_out.send("bang");
+
+      return;
+
+    }
 
 
     void OutputEvent(const smf :: MidiEvent& event) {

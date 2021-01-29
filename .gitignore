@@ -1,4 +1,3 @@
-!build/
 
 __*
 sysbuild
@@ -10,7 +9,7 @@ log.txt
 externals
 extensions
 support
-tests
+tests/*
 *.o
 *.dylib
 tmp
@@ -18,3 +17,6 @@ tmp
 
 package-info.json
 
+
+!build/
+!tests/libmock_kernel.dylib

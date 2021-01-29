@@ -99,6 +99,7 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/Homebrew/Cella
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/Homebrew/Cellar/cmake/3.16.4/share/cmake/Modules/Platform/UnixPaths.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/.git/HEAD))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/.git/modules/source/min-api/HEAD))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/.git/modules/source/min-api/refs/heads/temporary))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/.git/refs/heads/feature/seq_alt))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/CMakeLists.txt))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/leico_studio/Documents/Max\ 8/Packages/lei/build/CMakeFiles/3.16.4/CMakeCCompiler.cmake))
